@@ -1,0 +1,4 @@
+function test(address _spender, uint256 _value) external returns (bool success) {
+        allowance[msg.sender][_spender] = _value;
+        return true;
+    }
